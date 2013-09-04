@@ -1,4 +1,3 @@
-countries-API
-=============
+# Countries PHP API class
 
-Get all the countries in the world and their information using a PHP API.
+This Countries PHP API class gets all the countries in the world and their information.

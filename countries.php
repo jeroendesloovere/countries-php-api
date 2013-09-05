@@ -90,7 +90,7 @@ class Countries
 /**
  * Countries Exception
  *
- * @author	Jeroen Desloovere <jeroen@siesqo.be>
+ * @author Jeroen Desloovere <jeroen@siesqo.be>
  */
 class CountriesException extends Exception
 {

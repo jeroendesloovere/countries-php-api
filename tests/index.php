@@ -5,11 +5,10 @@
  * Get all the countries in the world and their languages.
  *
  * @author Jeroen Desloovere <jeroen@siesqo.be>
- * @date 20130724
  */
 
 // require
-require '../countries.php';
+require '../src/Countries/Countries.php';
 
 // get items
 $items = Countries::getAll();

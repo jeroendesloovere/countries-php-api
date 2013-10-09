@@ -15,3 +15,9 @@ $items = Countries::getAll();
 
 // dump items
 print_r($items);
+
+// get languages for country
+$items = Countries::getLanguages('BE');
+
+// dump items
+print_r($items);

@@ -20,13 +20,31 @@ class Countries
 	 * @param array[optional] $params
 	 * @return array
 	 */
-	protected static function doCall($params = array('lang' => 'nl'))
+	protected static function doCall($params)
 	{
 		// init results
 		$results = array();
 
+		// init default
+		if(count($params) == 0) $params = array('lang' => 'nl');
+
+		// init curl
+		$curl = curl_init();
+
+		// set options
+		curl_setopt($curl, CURLOPT_URL, self::API_URL);
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($curl, CURLOPT_TIMEOUT, 10);
+		curl_setopt($curl, CURLOPT_POSTFIELDS, $params);
+
+		// execute
+		$response = curl_exec($curl);
+
+		// close
+		curl_close($curl);
+
 		// define items
-		$items = json_decode(SpoonHTTP::getContent(API_URL, array(CURLOPT_POSTFIELDS => $params)), true);
+		$items = json_decode($response, true);
 
 		// loop items
 		foreach($items['geonames'] as $item)
@@ -45,13 +63,16 @@ class Countries
 	 * @param string[optional] $language
 	 * @return countries 	Returns countryCode => countryName
 	 */
-	public static function getAll($language = 'nl')
+	public static function getAll($language = null)
 	{
 		// init results
 		$results = array();
 
+		// define parameters
+		$parameters = (!empty($language)) ? array() : array('lang' => (string) $language);
+
 		// get items
-		$items = self::doCall(array('lang' => (string) $language));
+		$items = self::doCall($parameters);
 
 		// loop items
 		foreach($items as $countryCode => $item)

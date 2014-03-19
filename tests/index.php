@@ -8,7 +8,7 @@
  */
 
 // require
-require '../src/Countries/Countries.php';
+require '../src/JeroenDesloovere/Countries/Countries.php';
 
 // get items
 $items = Countries::getAll();

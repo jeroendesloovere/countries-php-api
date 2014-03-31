@@ -19,7 +19,7 @@ class Countries
     /**
      * Do call
      *
-     * @param array[optional] $params
+     * @param  array[optional] $params
      * @return array
      */
     protected static function doCall($params)
@@ -61,8 +61,8 @@ class Countries
     /**
      * Get all countries
      *
-     * @param string[optional] $language
-     * @return countries     Returns countryCode => countryName
+     * @param  string[optional] $language
+     * @return countries        Returns countryCode => countryName
      */
     public static function getAll($language = null)
     {
@@ -88,7 +88,7 @@ class Countries
     /**
      * Get languages for a country
      *
-     * @param string $countryCode     The country code where you want to get the languages for.
+     * @param  string $countryCode The country code where you want to get the languages for.
      * @return array
      */
     public static function getLanguages($countryCode = null)
@@ -106,7 +106,6 @@ class Countries
         return explode(',', $items[$countryCode]['languages']);
     }
 }
-
 
 /**
  * Countries Exception

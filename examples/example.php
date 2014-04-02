@@ -8,7 +8,7 @@
  */
 
 // autoload files using Composer autoload
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '../src/JeroenDesloovere/Countries/Countries.php';
 
 use JeroenDesloovere\Countries;
 

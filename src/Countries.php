@@ -7,7 +7,7 @@ namespace JeroenDesloovere\Countries;
  *
  * Get all the countries in the world and their languages.
  *
- * @author Jeroen Desloovere <jeroen@siesqo.be>
+ * @author Jeroen Desloovere <info@jeroendesloovere.be>
  */
 class Countries
 {
@@ -110,6 +110,6 @@ class Countries
 /**
  * Countries Exception
  *
- * @author Jeroen Desloovere <jeroen@siesqo.be>
+ * @author Jeroen Desloovere <info@jeroendesloovere.be>
  */
 class CountriesException extends \Exception {}

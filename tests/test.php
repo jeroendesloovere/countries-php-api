@@ -7,8 +7,10 @@
  * @author Jeroen Desloovere <jeroen@siesqo.be>
  */
 
-// require
-require '../src/JeroenDesloovere/Countries/Countries.php';
+// autoload files using Composer autoload
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use JeroenDesloovere\Countries;
 
 // get items
 $items = Countries::getAll();

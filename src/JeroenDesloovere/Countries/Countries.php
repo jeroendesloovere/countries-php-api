@@ -112,4 +112,4 @@ class Countries
  *
  * @author Jeroen Desloovere <jeroen@siesqo.be>
  */
-class CountriesException extends Exception {}
+class CountriesException extends \Exception {}

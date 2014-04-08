@@ -1,9 +1,9 @@
 {
-    "name": "deslooverej/countries-php-api",
+    "name": "jeroendesloovere/countries-php-api",
     "type": "library",
     "description": "This Countries PHP API class gets all the countries in the world and their information.",
     "keywords": ["countries", "api", "php"],
-    "homepage": "https://github.com/deslooverej/countries-php-api",
+    "homepage": "https://github.com/jeroendesloovere/countries-php-api",
     "license": "MIT",
     "authors": [
         {

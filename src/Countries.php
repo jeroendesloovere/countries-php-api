@@ -100,7 +100,9 @@ class Countries
         $items = self::doCall();
 
         // error checking
-        if (!isset($items[$countryCode])) throw new CountriesException('Country with code: "' . $countryCode . '" doesn\'t exists');
+        if (!isset($items[$countryCode])) {
+            throw new CountriesException('Country with code: "' . $countryCode . '" doesn\'t exists');
+        }
 
         // return languages
         return explode(',', $items[$countryCode]['languages']);

@@ -2,6 +2,20 @@
 
 This Countries PHP API class gets all the countries in the world and their information.
 
+## Installation
+
+You can install the class by using [composer](https://getcomposer.org/). Just add it as a dependency in you `composer.json` file,
+
+```JSON
+{
+	"require":{
+		"jeroendesloovere/countries-php-api": "1.0.*"
+	}
+}
+```
+
+and run `composer install`.
+
 ## Documentation
 
 The class is well documented inline. If you use a decent IDE you'll see that each method is documented with PHPDoc.

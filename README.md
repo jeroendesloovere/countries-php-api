@@ -9,7 +9,7 @@ You can install the class by using [composer](https://getcomposer.org/). Just ad
 ```JSON
 {
 	"require":{
-		"jeroendesloovere/countries-php-api": "1.0.*"
+		"jeroendesloovere/countries-php-api": "1.*"
 	}
 }
 ```

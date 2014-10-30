@@ -22,7 +22,7 @@ class Countries
      * @param  array[optional] $params
      * @return array
      */
-    protected static function doCall($params)
+    protected static function doCall($params = array())
     {
         // init results
         $results = array();

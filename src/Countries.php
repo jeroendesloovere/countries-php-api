@@ -34,11 +34,10 @@ class Countries
         $curl = curl_init();
 
         // set options
-        curl_setopt($curl, CURLOPT_URL, self::API_URL);
+        curl_setopt($curl, CURLOPT_URL, self::API_URL . '?' . http_build_query($params));
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_TIMEOUT, 10);
-        curl_setopt($curl, CURLOPT_POSTFIELDS, $params);
-
+        
         // execute
         $response = curl_exec($curl);
 
@@ -70,7 +69,7 @@ class Countries
         $results = array();
 
         // define parameters
-        $parameters = (!empty($language)) ? array() : array('lang' => (string) $language);
+        $parameters = (empty($language)) ? array() : array('lang' => (string) $language);
 
         // get items
         $items = self::doCall($parameters);

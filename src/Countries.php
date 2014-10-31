@@ -8,6 +8,7 @@ namespace JeroenDesloovere\Countries;
  * Get all the countries in the world and their languages.
  *
  * @author Jeroen Desloovere <info@jeroendesloovere.be>
+ * @author Manolis Agkopian <m.agkopian@gmail.com>
  */
 class Countries
 {

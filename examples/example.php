@@ -7,7 +7,7 @@
  * @author Jeroen Desloovere <info@jeroendesloovere.be>
  */
 
-require_once __DIR__ . '/../src/Countries.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use JeroenDesloovere\Countries\Countries;
 

@@ -2,6 +2,8 @@
 
 namespace JeroenDesloovere\Countries;
 
+use JeroenDesloovere\Countries\CountriesException;
+
 /**
  * Countries
  *
@@ -108,10 +110,3 @@ class Countries
         return explode(',', $items[$countryCode]['languages']);
     }
 }
-
-/**
- * Countries Exception
- *
- * @author Jeroen Desloovere <info@jeroendesloovere.be>
- */
-class CountriesException extends \Exception {}
